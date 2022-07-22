@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  background: #f7f5bb;
+  font-family:sans-serif;
+}
+
+.addnotebutton{
+  position: absolute;
+  top: 5px;
+  right: 20px
+
+  
+}
+.addnotebutton .addbutton{
+  height: 40px;
+  width: 40px;
+  margin-left: 75px;
+  cursor: pointer;
+}
+.addnotebutton .addbutton:hover {
+  height: 45px;
+  width: 45px;
+  transition: height width 1s;
+}
+
+
+
+
+
+.addnotes{
+  margin-top: 100px;
+}
+
+.notes{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-left:5em;
+    margin-bottom: 5em;
+    overflow:auto;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgb(106, 106, 106);
+    font-family:'calibri';
+    font-size: 17px;
+    padding: 7px;
+    
+}
+
+
+.notes:empty::before{
+  content: attr(placeholder);
+  color: #5c5b5b;
+  opacity: 70%;
+}
+
+
+.close {
+    color: black;
+    float: right;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    
+    
+  }
+  
+  .close:hover,
+  .close:focus {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    transition: height width 1s;
+  }
+
+
+
+
+.icons:hover
+{ cursor: pointer;
+  background:#bababa;
+  height: 25px;
+  width: 25px;
+  transition: height width 1s;
+
+ }
+ img.icons { 
+  margin-bottom: 2px;
+  border-radius: 3px;
+ }
+
+
+
+ #toolbar{
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  height: 25px;
+  box-shadow: 0 0 5px rgb(106, 106, 106);
+ }
+
+

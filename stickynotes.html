@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Stickynotes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="style.css">
+        <script src="stickynotes.js" async defer></script>
+        <script src="formatting.js" async defer></script>
+        <script src="dragnotes.js" async defer></script>
+
+    </head>
+    <body>
+
+        <div class="addnotebutton">
+            
+            <p>Add new note :)</p>
+            <img class="addbutton" title="addnotes" onclick="newnotes();" src="icons\addition.png" />
+            
+        </div>
+
+        
+
+        <div id="toolbar" class="context-menu"  style="display:none">
+
+            <img class="icons" title="Bold" onclick="formatDoc('bold');" src="icons\bold.gif" />
+            <img class="icons" title="Italic" onclick="formatDoc('italic');" src="icons/italics.gif" />
+            <img class="icons" title="Underline" onclick="formatDoc('underline');" src="icons/underline.gif" />
+            <img class="icons" title="Left align" onclick="formatDoc('justifyleft');" src="icons/leftalign.gif" />
+            <img class="icons" title="Center align" onclick="formatDoc('justifycenter');" src="icons/centeralign.gif" />
+            <img class="icons" title="Right align" onclick="formatDoc('justifyright');" src="icons/rightalign.gif" />
+            
+        </div>
+
+        
+        <div class="addnotes" id="add_note"></div>
+
+    
+    </body>
+</html>
